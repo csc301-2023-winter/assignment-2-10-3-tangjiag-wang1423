@@ -63,7 +63,7 @@ def calculate_heuristic(word: str, desired_word: str) -> float:
     return 1 - (distance / longer_length)
 
 
-def related_keywords(word: str) -> list[str]:
+def related_keywords(word: str):
     """Return a list of 10 keywords/titles that exists in the database that is related to <word>,
     sorted in the order of heuristic. To appear in the result, the minimum heuristic is 0.7."""
     result_with_heuristic = []
